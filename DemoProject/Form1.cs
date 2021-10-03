@@ -16,5 +16,10 @@ namespace DemoProject
         {
             InitializeComponent();
         }
+
+        private void btnClickThis_Click(object sender, EventArgs e)
+        {
+            lblHelloWorld.Text = "Hello World!";
+        }
     }
 }
