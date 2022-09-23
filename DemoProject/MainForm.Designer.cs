@@ -35,31 +35,35 @@ namespace DemoProject
             // 
             // btnClickThis
             // 
-            this.btnClickThis.Location = new System.Drawing.Point(12, 60);
+            this.btnClickThis.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnClickThis.Location = new System.Drawing.Point(24, 115);
+            this.btnClickThis.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnClickThis.Name = "btnClickThis";
-            this.btnClickThis.Size = new System.Drawing.Size(81, 25);
+            this.btnClickThis.Size = new System.Drawing.Size(162, 48);
             this.btnClickThis.TabIndex = 0;
             this.btnClickThis.Text = "Click this";
-            this.btnClickThis.UseVisualStyleBackColor = true;
+            this.btnClickThis.UseVisualStyleBackColor = false;
             this.btnClickThis.Click += new System.EventHandler(this.btnClickThis_Click);
             // 
             // lblHelloWorld
             // 
             this.lblHelloWorld.AutoSize = true;
-            this.lblHelloWorld.Location = new System.Drawing.Point(109, 66);
+            this.lblHelloWorld.Location = new System.Drawing.Point(218, 127);
+            this.lblHelloWorld.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblHelloWorld.Name = "lblHelloWorld";
-            this.lblHelloWorld.Size = new System.Drawing.Size(0, 13);
+            this.lblHelloWorld.Size = new System.Drawing.Size(0, 25);
             this.lblHelloWorld.TabIndex = 1;
             // 
-            // Form1
+            // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 145);
+            this.ClientSize = new System.Drawing.Size(650, 279);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "MainForm";
+            this.Text = "Demo Project";
             this.ResumeLayout(false);
             this.PerformLayout();
 
