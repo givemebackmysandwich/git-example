@@ -21,5 +21,10 @@ namespace DemoProject
         {
             lblHelloWorld.Text = "Hello World!";
         }
+
+        private void QuitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
