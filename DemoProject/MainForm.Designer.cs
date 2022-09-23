@@ -31,13 +31,14 @@ namespace DemoProject
         {
             this.btnClickThis = new System.Windows.Forms.Button();
             this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.changeColorButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClickThis
             // 
             this.btnClickThis.BackColor = System.Drawing.Color.PaleGreen;
             this.btnClickThis.Location = new System.Drawing.Point(24, 115);
-            this.btnClickThis.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnClickThis.Margin = new System.Windows.Forms.Padding(6);
             this.btnClickThis.Name = "btnClickThis";
             this.btnClickThis.Size = new System.Drawing.Size(162, 48);
             this.btnClickThis.TabIndex = 0;
@@ -54,14 +55,25 @@ namespace DemoProject
             this.lblHelloWorld.Size = new System.Drawing.Size(0, 25);
             this.lblHelloWorld.TabIndex = 1;
             // 
+            // changeColorButton
+            // 
+            this.changeColorButton.Location = new System.Drawing.Point(41, 40);
+            this.changeColorButton.Name = "changeColorButton";
+            this.changeColorButton.Size = new System.Drawing.Size(177, 54);
+            this.changeColorButton.TabIndex = 2;
+            this.changeColorButton.Text = "Change Color";
+            this.changeColorButton.UseVisualStyleBackColor = true;
+            this.changeColorButton.Click += new System.EventHandler(this.changeColorButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 279);
+            this.Controls.Add(this.changeColorButton);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "MainForm";
             this.Text = "Demo Project";
             this.ResumeLayout(false);
@@ -73,6 +85,7 @@ namespace DemoProject
 
         private System.Windows.Forms.Button btnClickThis;
         private System.Windows.Forms.Label lblHelloWorld;
+        private System.Windows.Forms.Button changeColorButton;
     }
 }
 

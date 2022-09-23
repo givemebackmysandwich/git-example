@@ -21,5 +21,10 @@ namespace DemoProject
         {
             lblHelloWorld.Text = "Hello World!";
         }
+
+        private void changeColorButton_Click(object sender, EventArgs e)
+        {
+            changeColorButton.BackColor = Color.SkyBlue;
+        }
     }
 }
