@@ -31,6 +31,7 @@ namespace DemoProject
         {
             this.btnClickThis = new System.Windows.Forms.Button();
             this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.QuitButton = new System.Windows.Forms.Button();
             this.changeColorButton = new System.Windows.Forms.Button();
             this.CounterButton = new System.Windows.Forms.Button();
             this.countResult = new System.Windows.Forms.Label();
@@ -59,6 +60,15 @@ namespace DemoProject
             this.lblHelloWorld.Size = new System.Drawing.Size(0, 20);
             this.lblHelloWorld.TabIndex = 1;
             // 
+            // QuitButton
+            // 
+            this.QuitButton.Location = new System.Drawing.Point(499, 172);
+            this.QuitButton.Name = "QuitButton";
+            this.QuitButton.Size = new System.Drawing.Size(117, 51);
+            this.QuitButton.TabIndex = 2;
+            this.QuitButton.Text = "Quit";
+            this.QuitButton.UseVisualStyleBackColor = true;
+            this.QuitButton.Click += new System.EventHandler(this.QuitButton_Click);
             // changeColorButton
             // 
             this.changeColorButton.Location = new System.Drawing.Point(41, 40);
@@ -92,6 +102,10 @@ namespace DemoProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 279);
+            this.Controls.Add(this.QuitButton);
+            this.Controls.Add(this.lblHelloWorld);
+            this.Controls.Add(this.btnClickThis);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Controls.Add(this.changeColorButton);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
@@ -113,6 +127,7 @@ namespace DemoProject
 
         private System.Windows.Forms.Button btnClickThis;
         private System.Windows.Forms.Label lblHelloWorld;
+        private System.Windows.Forms.Button QuitButton;
         private System.Windows.Forms.Button changeColorButton;
         private System.Windows.Forms.Button CounterButton;
         private System.Windows.Forms.Label countResult;
