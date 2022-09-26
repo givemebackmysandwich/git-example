@@ -12,6 +12,8 @@ namespace DemoProject
 {
     public partial class MainForm : Form
     {
+        
+        private int count = 0;
         public MainForm()
         {
             InitializeComponent();
@@ -25,6 +27,11 @@ namespace DemoProject
         private void changeColorButton_Click(object sender, EventArgs e)
         {
             changeColorButton.BackColor = Color.SkyBlue;
+        }
+        
+        private void CounterButton_Click(object sender, EventArgs e) {
+            count++;
+            countResult.Text = Convert.ToString(count);
         }
     }
 }
