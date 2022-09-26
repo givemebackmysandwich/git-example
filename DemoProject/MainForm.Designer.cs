@@ -31,6 +31,8 @@ namespace DemoProject
         {
             this.btnClickThis = new System.Windows.Forms.Button();
             this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.QuitButton = new System.Windows.Forms.Button();
+            this.changeColorButton = new System.Windows.Forms.Button();
             this.CounterButton = new System.Windows.Forms.Button();
             this.countResult = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,6 +44,10 @@ namespace DemoProject
             this.btnClickThis.BackColor = System.Drawing.Color.PaleGreen;
             this.btnClickThis.Location = new System.Drawing.Point(16, 74);
             this.btnClickThis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClickThis.Location = new System.Drawing.Point(24, 115);
+            this.btnClickThis.Margin = new System.Windows.Forms.Padding(6);
+            this.btnClickThis.Location = new System.Drawing.Point(18, 92);
+            this.btnClickThis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClickThis.Name = "btnClickThis";
             this.btnClickThis.Size = new System.Drawing.Size(108, 30);
             this.btnClickThis.TabIndex = 0;
@@ -58,6 +64,24 @@ namespace DemoProject
             this.lblHelloWorld.Size = new System.Drawing.Size(0, 16);
             this.lblHelloWorld.TabIndex = 1;
             // 
+            // QuitButton
+            // 
+            this.QuitButton.Location = new System.Drawing.Point(499, 172);
+            this.QuitButton.Name = "QuitButton";
+            this.QuitButton.Size = new System.Drawing.Size(117, 51);
+            this.QuitButton.TabIndex = 2;
+            this.QuitButton.Text = "Quit";
+            this.QuitButton.UseVisualStyleBackColor = true;
+            this.QuitButton.Click += new System.EventHandler(this.QuitButton_Click);
+            // changeColorButton
+            // 
+            this.changeColorButton.Location = new System.Drawing.Point(41, 40);
+            this.changeColorButton.Name = "changeColorButton";
+            this.changeColorButton.Size = new System.Drawing.Size(177, 54);
+            this.changeColorButton.TabIndex = 2;
+            this.changeColorButton.Text = "Change Color";
+            this.changeColorButton.UseVisualStyleBackColor = true;
+            this.changeColorButton.Click += new System.EventHandler(this.changeColorButton_Click);
             // CounterButton
             // 
             this.CounterButton.Location = new System.Drawing.Point(16, 110);
@@ -103,6 +127,16 @@ namespace DemoProject
             this.ClientSize = new System.Drawing.Size(434, 178);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(650, 279);
+            this.Controls.Add(this.QuitButton);
+            this.Controls.Add(this.lblHelloWorld);
+            this.Controls.Add(this.btnClickThis);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Controls.Add(this.changeColorButton);
+            this.Controls.Add(this.lblHelloWorld);
+            this.Controls.Add(this.btnClickThis);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.ClientSize = new System.Drawing.Size(488, 223);
             this.Controls.Add(this.countResult);
             this.Controls.Add(this.CounterButton);
             this.Controls.Add(this.lblHelloWorld);
@@ -119,6 +153,8 @@ namespace DemoProject
 
         private System.Windows.Forms.Button btnClickThis;
         private System.Windows.Forms.Label lblHelloWorld;
+        private System.Windows.Forms.Button QuitButton;
+        private System.Windows.Forms.Button changeColorButton;
         private System.Windows.Forms.Button CounterButton;
         private System.Windows.Forms.Label countResult;
         private System.Windows.Forms.Button button1;

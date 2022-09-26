@@ -24,6 +24,16 @@ namespace DemoProject
             lblHelloWorld.Text = "Hello World!";
         }
 
+        private void QuitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        
+        private void changeColorButton_Click(object sender, EventArgs e)
+        {
+            changeColorButton.BackColor = Color.SkyBlue;
+        }
+        
         private void CounterButton_Click(object sender, EventArgs e) {
             count++;
             countResult.Text = Convert.ToString(count);
