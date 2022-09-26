@@ -12,6 +12,8 @@ namespace DemoProject
 {
     public partial class MainForm : Form
     {
+        
+        private int count = 0;
         public MainForm()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace DemoProject
         private void btnClickThis_Click(object sender, EventArgs e)
         {
             lblHelloWorld.Text = "Hello World!";
+        }
+
+        private void CounterButton_Click(object sender, EventArgs e) {
+            count++;
+            countResult.Text = Convert.ToString(count);
         }
     }
 }
