@@ -28,5 +28,10 @@ namespace DemoProject
             count++;
             countResult.Text = Convert.ToString(count);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text = "ITL Rockt!!!!!!";
+        }
     }
 }
